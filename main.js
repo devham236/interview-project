@@ -28,9 +28,10 @@ function openModal(item) {
             </ul>
             <button class='modal-close-btn'>close</button>
         </div>`;
-}
 
-modalEl.addEventListener("click", closeModal);
+  const modalCloseBtn = document.querySelector(".modal-close-btn");
+  modalCloseBtn.addEventListener("click", closeModal);
+}
 
 function closeModal() {
   currentModal = null;
