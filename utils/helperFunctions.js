@@ -4,6 +4,6 @@ export function calcTotalCookingTime(list) {
   }
 
   return list.reduce((acc, item) => {
-    return acc + item.cookTimeMinutes;
+    return acc + (item.cookTimeMinutes || 0);
   }, 0);
 }

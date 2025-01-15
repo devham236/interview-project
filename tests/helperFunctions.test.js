@@ -22,4 +22,14 @@ describe("calcTotalCookingTime function works properly", () => {
     const result = calcTotalCookingTime(wishList);
     expect(result).toBe(0);
   });
+
+  test("should return 0 when array contains items without cookTimeMinutes property", () => {
+    const wishList = [
+      { cookTimeMinutes: 10 },
+      { name: "Hamza" },
+      { cookTimeMinutes: 30 },
+    ];
+    const result = calcTotalCookingTime(wishList);
+    expect(result).toBe(40);
+  });
 });
