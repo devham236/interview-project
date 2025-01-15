@@ -45,7 +45,7 @@ export function displayMenu() {
     });
   });
 
-  toggleRecipesBtn.textContent = recipesLimit === 5 ? "Show More" : "Show Less";
+  toggleRecipesBtn.innerHTML = recipesLimit === 5 ? "Show More" : "Show Less";
 }
 
 toggleRecipesBtn.addEventListener("click", () => {

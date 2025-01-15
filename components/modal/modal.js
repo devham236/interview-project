@@ -3,7 +3,6 @@ let currentModal = null;
 
 export function openModal(item) {
   currentModal = item;
-
   modalEl.innerHTML = `<div id="modal-content">
             <h2 id="modal-title">${currentModal.name}</h2>
             <ul>
